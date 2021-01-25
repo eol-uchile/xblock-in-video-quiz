@@ -12,7 +12,7 @@ from xblock.fields import String
 from xblock.fragment import Fragment
 from xblockutils.studio_editable import StudioEditableXBlockMixin
 from xblock.completable import XBlockCompletionMode
-from .utils import _
+from django.utils.translation import ugettext as _
 
 
 def get_resource_string(path):

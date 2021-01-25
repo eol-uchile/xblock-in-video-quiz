@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-25 13:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: invideoquiz/invideoquiz.py
+msgid "Display Name"
+msgstr "Nombre para mostrar del componente ENG"
+
+#: invideoquiz/invideoquiz.py
+msgid "In-Video Quiz XBlock"
+msgstr "In-Video Quiz XBlock"
+
+#: invideoquiz/invideoquiz.py
+msgid "Video ID"
+msgstr "ID del video"
+
+#: invideoquiz/invideoquiz.py
+msgid ""
+"This is the component ID for the video in which you want to insert your quiz"
+" question."
+msgstr ""
+"Este es el ID del componente de VIDEO donde se insetarán los ejercicios del "
+"Quiz."
+
+#: invideoquiz/invideoquiz.py
+msgid "Problem Timemap"
+msgstr "Secuencia de Ejercicios"
+
+#: invideoquiz/invideoquiz.py
+msgid ""
+"A simple string field to define problem IDs and their time maps (in seconds)"
+" as JSON. Example: {\"60\": \"50srvqlii4ru9gonprp35gkcfyd5weju\"}"
+msgstr ""
+"Campo de texto donde se indican los ejercicios, definiendo el tiempo de "
+"aparición (en segundos) y su ID de componente. El texto debe ingresarse en "
+"formato JSON, ejemplo: {\"60\": \"50srvqlii4ru9gonprp35gkcfyd5weju\"}"
