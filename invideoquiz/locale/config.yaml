@@ -12,7 +12,7 @@ ignore_dirs:
 
 # i18n_tools produces just "django-partial.po" by default, but we need "django.po":
 generate_merge:
-    django.po:
+    text.po:
         - django-partial.po
     djangojs.po:
         - djangojs-partial.po

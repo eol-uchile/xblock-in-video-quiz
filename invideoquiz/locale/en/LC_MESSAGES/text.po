@@ -18,33 +18,28 @@ msgstr ""
 
 #: invideoquiz/invideoquiz.py
 msgid "Display Name"
-msgstr "Nombre para mostrar del componente ES"
+msgstr ""
 
 #: invideoquiz/invideoquiz.py
 msgid "In-Video Quiz XBlock"
-msgstr "In-Video Quiz XBlock"
+msgstr ""
 
 #: invideoquiz/invideoquiz.py
 msgid "Video ID"
-msgstr "ID del video"
+msgstr ""
 
 #: invideoquiz/invideoquiz.py
 msgid ""
 "This is the component ID for the video in which you want to insert your quiz"
 " question."
 msgstr ""
-"Este es el ID del componente de VIDEO donde se insetarán los ejercicios del "
-"Quiz."
 
 #: invideoquiz/invideoquiz.py
 msgid "Problem Timemap"
-msgstr "Secuencia de Ejercicios"
+msgstr ""
 
 #: invideoquiz/invideoquiz.py
 msgid ""
 "A simple string field to define problem IDs and their time maps (in seconds)"
 " as JSON. Example: {\"60\": \"50srvqlii4ru9gonprp35gkcfyd5weju\"}"
 msgstr ""
-"Campo de texto donde se indican los ejercicios, definiendo el tiempo de "
-"aparición (en segundos) y su ID de componente. El texto debe ingresarse en "
-"formato JSON, ejemplo: {\"60\": \"50srvqlii4ru9gonprp35gkcfyd5weju\"}"
