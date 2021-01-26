@@ -1,0 +1,18 @@
+# Configuration for i18n workflow.
+
+locales:
+    - en
+    - es_419
+    # Add languages here as needed
+
+# Directories we don't search for strings.
+ignore_dirs:
+    # Directories with no user-facing code.
+    - '*/css'
+
+# i18n_tools produces just "django-partial.po" by default, but we need "django.po":
+generate_merge:
+    text.po:
+        - django-partial.po
+    djangojs.po:
+        - djangojs-partial.po
