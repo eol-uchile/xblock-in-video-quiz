@@ -43,7 +43,10 @@ class Tox(TestCommand):
         errno = tox.cmdline(args=args)
         sys.exit(errno)
 
-setup(
+
+import setuptools
+
+setuptools.setup(
     name='invideoquiz-xblock',
     version='0.1.7',
     description='Helper XBlock to locate CAPA problems within videos.',

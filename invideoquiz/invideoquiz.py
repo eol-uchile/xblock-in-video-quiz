@@ -6,13 +6,12 @@ videos at specific time points.
 import os
 import pkg_resources
 
+from django.utils.translation import ugettext as _
 from xblock.core import XBlock
 from xblock.fields import Scope
 from xblock.fields import String
 from xblock.fragment import Fragment
 from xblockutils.studio_editable import StudioEditableXBlockMixin
-
-from .utils import _
 
 
 def get_resource_string(path):
