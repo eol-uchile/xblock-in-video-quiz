@@ -1,9 +1,8 @@
 """Setup for invideoquiz XBlock."""
 
-from setuptools import setup, find_packages
+import setuptools
 
-
-setup(
+setuptools.setup(
     name='invideoquiz-xblock',
     version='1.0.0',
     description='Helper XBlock to locate CAPA problems within videos.',
