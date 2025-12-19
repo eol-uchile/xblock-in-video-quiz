@@ -27,5 +27,11 @@ setuptools.setup(
         'xblock.v1': [
             'invideoquiz = invideoquiz:InVideoQuizXBlock',
         ],
+         'lms.djangoapp': [
+            "invideoquiz = invideoquiz.apps:InVideoQuizConfig",
+        ],
+        'cms.djangoapp': [
+            "invideoquiz = invideoquiz.apps:InVideoQuizConfig",
+        ]
     }
 )
