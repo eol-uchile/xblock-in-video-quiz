@@ -6,8 +6,8 @@ from openedx.core.djangoapps.plugins.constants import (
 )
 
 
-class ImgAnnotationConfig(AppConfig):
-    name = 'invideo_quiz'
+class InVideoQuizConfig(AppConfig):
+    name = 'invideoquiz'
     plugin_app = {
         PluginSettings.CONFIG: {
             ProjectType.CMS: {
