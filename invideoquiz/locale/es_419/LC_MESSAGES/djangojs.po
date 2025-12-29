@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xblock-in-video-quiz 1.0.0\n"
 "Report-Msgid-Bugs-To: eol-ing@uchile.cl\n"
-"POT-Creation-Date: 2025-12-29 14:39+0000\n"
+"POT-Creation-Date: 2026-06-17 14:41+0000\n"
 "PO-Revision-Date: 2025-09-23 14:53+0000\n"
 "Last-Translator: Oficina EOL <eol-ing@uchile.cl>\n"
 "Language: es_419\n"
@@ -17,13 +17,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+"Generated-By: Babel 2.18.0\n"
 
-#: invideoquiz/public/js/src/invideoquiz.js:10
+#: invideoquiz/public/js/src/invideoquiz.js:12
 msgid "Continue"
 msgstr "Continuar"
 
-#: invideoquiz/public/js/src/invideoquiz.js:87
-msgid "This component will appear in the video at"
+#: invideoquiz/public/js/src/invideoquiz.js:89
+msgid "This component will appear in the video at "
 msgstr "Este componente aparecerá en el video en "
 
