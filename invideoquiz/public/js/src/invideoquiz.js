@@ -84,7 +84,7 @@ function InVideoQuizXBlock(runtime, element) {
             if (isInVideoComponent) {
                 var minutes = parseInt(time / 60, 10);
                 var seconds = ('0' + (time % 60)).slice(-2);
-                var timeParagraph = '<p class="in-video-alert"><i class="fa fa-exclamation-circle"></i>This component will appear in the video at <strong>' + minutes + ':' + seconds + '</strong></p>';
+                var timeParagraph = '<p class="in-video-alert"><i class="fa fa-exclamation-circle"></i>'+gettext("This component will appear in the video at")+'<strong>' + minutes + ':' + seconds + '</strong></p>';
                 component.prepend(timeParagraph);
             }
         });
