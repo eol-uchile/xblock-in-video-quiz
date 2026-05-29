@@ -26,7 +26,3 @@ msgstr ""
 #: invideoquiz/public/js/src/invideoquiz.js:87
 msgid "This component will appear in the video at "
 msgstr ""
-
-#~ msgid "This component will appear in the video at"
-#~ msgstr ""
-
