@@ -25,7 +25,7 @@ setuptools.setup(
     ],
     entry_points={
         'xblock.v1': [
-            'invideoquiz = invideoquiz:InVideoQuizXBlock',
+            'invideoquiz = invideoquiz.invideoquiz:InVideoQuizXBlock',
         ],
          'lms.djangoapp': [
             "invideoquiz = invideoquiz.apps:InVideoQuizConfig",
