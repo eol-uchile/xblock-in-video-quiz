@@ -2,10 +2,7 @@
 function InVideoQuizXBlock(runtime, element) {
     $('.in-video-quiz-block').closest('.vert').hide();
     var videoId = $('.in-video-quiz-block').data('videoid');
-    if (!videoId || !InVideoQuizXBlock.config.hasOwnProperty(videoId)) {
-        return;
-    }
-    var problemTimesMap = InVideoQuizXBlock.config[videoId];
+    var problemTimesMap = $('.in-video-quiz-block').data('timemap');
     var studentMode = $('.in-video-quiz-block').data('mode') !== 'staff';
     var extraVideoButton = '<button class="in-video-continue">'+gettext("Continue")+'</button>';
     var video;
