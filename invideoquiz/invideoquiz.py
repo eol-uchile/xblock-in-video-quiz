@@ -3,16 +3,17 @@ This XBlock allows for edX components to be displayed to users inside of
 videos at specific time points.
 """
 
+# Installed packages (via pip)
+from django.template import Context, Template
+from django.utils.translation import gettext_lazy as _
 import os
 import pkg_resources
 
+# Edx dependencies
 from xblock.core import XBlock
-from xblock.fields import Scope
-from xblock.fields import String
+from xblock.fields import Scope, String
 from xblock.fragment import Fragment
 from xblockutils.studio_editable import StudioEditableXBlockMixin
-
-from .utils import _
 
 
 def get_resource_string(path):
@@ -34,7 +35,7 @@ class InVideoQuizXBlock(StudioEditableXBlockMixin, XBlock):
 
     display_name = String(
         display_name=_('Display Name'),
-        default=_('In-Video Quiz XBlock'),
+        default='In-Video Quiz XBlock',
         scope=Scope.settings,
     )
 
@@ -65,6 +66,11 @@ class InVideoQuizXBlock(StudioEditableXBlockMixin, XBlock):
         'timemap',
     ]
 
+    def render_template(self, template_path, context):
+        template_str = get_resource_string(template_path)
+        template = Template(template_str)
+        return template.render(Context(context))
+
     # Decorate the view in order to support multiple devices e.g. mobile
     # See: https://openedx.atlassian.net/wiki/display/MA/Course+Blocks+API
     # section 'View @supports(multi_device) decorator'
@@ -73,27 +79,18 @@ class InVideoQuizXBlock(StudioEditableXBlockMixin, XBlock):
         """
         Show to students when viewing courses
         """
-        fragment = self.build_fragment(
-            path_html='html/invideoquiz.html',
-            paths_css=[
-                'css/invideoquiz.css',
-            ],
-            paths_js=[
-                'js/src/invideoquiz.js',
-            ],
-            fragment_js='InVideoQuizXBlock',
-            context={
-                'video_id': self.video_id,
-                'user_mode': self.user_mode,
-            },
-        )
-        config = get_resource_string('js/src/config.js')
-        config = config.format(
-            video_id=self.video_id,
-            timemap=self.timemap,
-        )
-        fragment.add_javascript(config)
-        return fragment
+        context={
+            'video_id': self.video_id,
+            'user_mode': self.user_mode,
+            'timemap': self.timemap,
+        }
+        template = self.render_template(
+            'html/invideoquiz.html', context)
+        frag = Fragment(template)
+        frag.add_css(str(get_resource_string("css/invideoquiz.css")))
+        frag.add_javascript(str(get_resource_string("js/src/invideoquiz.js")))
+        frag.initialize_js('InVideoQuizXBlock')
+        return frag
 
     @property
     def user_mode(self):

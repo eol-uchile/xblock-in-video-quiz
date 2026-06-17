@@ -1,7 +1,9 @@
-In Video Quiz XBlock |BS| |CA|
-==============================
+In Video Quiz XBlock
+====================
 
 This XBlock allows for edX components to be displayed to users inside of videos at specific time points.
+
+.. note:: This fork is based in the `Stanford Online xblock-in-video-quiz version 0.1.17, commit 93624bd04a4b613ae53794fd97333192a606aaa8 <https://github.com/Stanford-Online/xblock-in-video-quiz/commit/93624bd04a4b613ae53794fd97333192a606aaa8>`
 
 Installation
 ------------
@@ -38,10 +40,3 @@ License
 -------
 
 The In Video Quiz XBlock is available under the AGPL Version 3.0 License.
-
-
-.. |BS| image:: https://travis-ci.org/Stanford-Online/xblock-in-video-quiz.svg
-  :target: https://travis-ci.org/Stanford-Online/xblock-in-video-quiz
-
-.. |CA| image:: https://coveralls.io/repos/Stanford-Online/xblock-in-video-quiz/badge.svg?branch=master&service=github
-  :target: https://coveralls.io/github/Stanford-Online/xblock-in-video-quiz?branch=master
