@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xblock-in-video-quiz 1.0.0\n"
 "Report-Msgid-Bugs-To: eol-ing@uchile.cl\n"
-"POT-Creation-Date: 2025-09-23 15:06+0000\n"
+"POT-Creation-Date: 2025-12-29 14:39+0000\n"
 "PO-Revision-Date: 2025-09-23 14:53+0000\n"
 "Last-Translator: Oficina EOL <eol-ing@uchile.cl>\n"
 "Language: en\n"
@@ -19,29 +19,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: invideoquiz/invideoquiz.py:40
+#: invideoquiz/invideoquiz.py:35
 msgid "Display Name"
 msgstr ""
 
-#: invideoquiz/invideoquiz.py:41
+#: invideoquiz/invideoquiz.py:36
 msgid "In-Video Quiz XBlock"
 msgstr ""
 
-#: invideoquiz/invideoquiz.py:46
+#: invideoquiz/invideoquiz.py:41
 msgid "Video ID"
 msgstr ""
 
-#: invideoquiz/invideoquiz.py:50
+#: invideoquiz/invideoquiz.py:45
 msgid ""
 "This is the component ID for the video in which you want to insert your "
 "quiz question."
 msgstr ""
 
-#: invideoquiz/invideoquiz.py:56
+#: invideoquiz/invideoquiz.py:51
 msgid "Problem Timemap"
 msgstr ""
 
-#: invideoquiz/invideoquiz.py:60
+#: invideoquiz/invideoquiz.py:55
 #, python-brace-format
 msgid ""
 "A simple string field to define problem IDs and their time maps (in "

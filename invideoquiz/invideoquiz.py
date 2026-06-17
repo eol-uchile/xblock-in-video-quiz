@@ -5,7 +5,7 @@ videos at specific time points.
 
 # Installed packages (via pip)
 from django.template import Context, Template
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext_lazy as _
 import os
 import pkg_resources
 
@@ -35,7 +35,7 @@ class InVideoQuizXBlock(StudioEditableXBlockMixin, XBlock):
 
     display_name = String(
         display_name=_('Display Name'),
-        default=_('In-Video Quiz XBlock'),
+        default='In-Video Quiz XBlock',
         scope=Scope.settings,
     )
 
