@@ -113,13 +113,13 @@ class InVideoQuizXBlock(StudioEditableXBlockMixin, XBlock):
         """
         return [
             ("InVideoQuizXBlock",
-             """<invideoquiz video_id='###' timemap='{ 10: "###" }' />
+             """<in-video-quiz-block display_name='In-Video Quiz XBlock' video_id='###' timemap='{ 10: "###" }' />
              """),
             ("Multiple InVideoQuizXBlock",
              """<vertical_demo>
-                <invideoquiz video_id='###' timemap='{ 10: "###" }' />
-                <invideoquiz video_id='###' timemap='{ 10: "###" }' />
-                <invideoquiz video_id='###' timemap='{ 10: "###" }' />
+                <in-video-quiz-block display_name='In-Video Quiz XBlock' video_id='###' timemap='{ 10: "###" }' />
+                <in-video-quiz-block display_name='In-Video Quiz XBlock' video_id='###' timemap='{ 10: "###" }' />
+                <in-video-quiz-block display_name='In-Video Quiz XBlock' video_id='###' timemap='{ 10: "###" }' />
                 </vertical_demo>
              """),
         ]
