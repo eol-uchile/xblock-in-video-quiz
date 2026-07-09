@@ -4,7 +4,7 @@ import setuptools
 
 setuptools.setup(
     name='invideoquiz',
-    version='1.0.1',
+    version='1.1.0',
     description='Helper XBlock to locate CAPA problems within videos.',
     license='AGPL v3',
     author="Oficina EOL UChile",
