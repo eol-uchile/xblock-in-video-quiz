@@ -10,11 +10,11 @@ import os
 import pkg_resources
 
 # Edx dependencies
+from xblock.completable import XBlockCompletionMode
 from xblock.core import XBlock
 from xblock.fields import Scope, String
 from xblock.fragment import Fragment
 from xblockutils.studio_editable import StudioEditableXBlockMixin
-
 
 def get_resource_string(path):
     """
@@ -32,6 +32,9 @@ class InVideoQuizXBlock(StudioEditableXBlockMixin, XBlock):
     """
 
     show_in_read_only_mode = True
+    has_score = False
+    has_custom_completion = False
+    completion_mode = XBlockCompletionMode.EXCLUDED
 
     display_name = String(
         display_name=_('Display Name'),
